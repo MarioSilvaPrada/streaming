@@ -4,7 +4,7 @@ import * as S from './App.styled';
 const App = () => {
   const getVideo = () => {
     window.addEventListener('load', () => {
-      const CONTENT_ID = '179058_c_559455';
+      const CONTENT_ID = '179058_c_559516';
       dacast(CONTENT_ID, 'video', {
         width: 800,
         height: 600,

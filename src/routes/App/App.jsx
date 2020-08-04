@@ -6,8 +6,9 @@ const App = () => {
     window.addEventListener('load', () => {
       const CONTENT_ID = '179058_c_559516';
       dacast(CONTENT_ID, 'video', {
-        width: 800,
-        height: 600,
+        width: 500,
+        height: 300,
+        position: 'relative'
       });
     });
   };
@@ -18,6 +19,7 @@ const App = () => {
 
   return (
     <S.Container>
+      <S.Title>Aqui vai ser o título</S.Title>
       <div id="video" />
     </S.Container>
   );

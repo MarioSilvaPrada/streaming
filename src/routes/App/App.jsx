@@ -8,7 +8,7 @@ const App = () => {
       dacast(CONTENT_ID, 'video', {
         width: 500,
         height: 300,
-        position: 'relative'
+        position: 'relative',
       });
     });
   };
@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <S.Container>
-      <S.Title>Aqui vai ser o título</S.Title>
+      <S.Title>Título</S.Title>
       <div id="video" />
     </S.Container>
   );

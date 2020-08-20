@@ -10,4 +10,4 @@ export const Container = styled.div`
   background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
 `;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`margin-bottom: 2rem;`;

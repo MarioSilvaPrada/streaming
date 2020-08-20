@@ -6,8 +6,8 @@ import * as S from './Form.styled';
 const Form = () => {
   const history = useHistory();
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [ name, setName ] = useState('');
+  const [ email, setEmail ] = useState('');
 
   const onSubmit = () => {
     setTimeout(() => {
@@ -27,6 +27,7 @@ const Form = () => {
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
+        required
         name="entry.598555192"
       />
       <S.Label>E-mail</S.Label>
@@ -34,6 +35,7 @@ const Form = () => {
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+        required
         name="entry.1523685262"
       />
       <S.Submit type="submit" value="Entrar" />

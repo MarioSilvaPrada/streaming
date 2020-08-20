@@ -6,8 +6,8 @@ import * as S from './Form.styled';
 const Form = () => {
   const history = useHistory();
 
-  const [ name, setName ] = useState('');
-  const [ email, setEmail ] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
 
   const onSubmit = () => {
     setTimeout(() => {

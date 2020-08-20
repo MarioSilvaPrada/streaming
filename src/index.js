@@ -5,6 +5,7 @@ import './index.css';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
+import InitialPage from './routes/InitialPage';
 import App from './routes/App/App';
 import theme from './theme/theme';
 // Pages
@@ -17,7 +18,8 @@ const root = (
   <ThemeProvider theme={theme}>
     <Router>
       <Switch>
-        <Route exact path="/" component={App} />
+        <Route exact path="/" component={InitialPage} />
+        <Route exact path="/streaming" component={App} />
         <Route path="*" component={PageNotFound} />
       </Switch>
     </Router>

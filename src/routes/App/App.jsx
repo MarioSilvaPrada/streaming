@@ -1,25 +1,32 @@
 import React, { useEffect } from 'react';
+import config from '../../config';
+import { useLocation } from 'react-router-dom';
 import * as S from './App.styled';
 
 const App = () => {
+  const { welcomeText } = config;
+  const { pathname } = useLocation();
+
   const getVideo = () => {
     window.addEventListener('load', () => {
       const CONTENT_ID = '179058_c_559516';
       dacast(CONTENT_ID, 'video', {
         width: 500,
         height: 300,
-        position: 'relative',
+        position: 'relative'
       });
     });
   };
 
-  useEffect(() => {
-    getVideo();
-  }, []);
-
+  useEffect(
+    () => {
+      getVideo();
+    },
+    [ pathname ]
+  );
   return (
     <S.Container>
-      <S.Title>Título</S.Title>
+      <S.Title>{welcomeText}</S.Title>
       <div id="video" />
     </S.Container>
   );

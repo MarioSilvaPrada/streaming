@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import config from '../../config';
 import { useLocation } from 'react-router-dom';
+import config from '../../config';
 import * as S from './App.styled';
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
       dacast(CONTENT_ID, 'video', {
         width: 500,
         height: 300,
-        position: 'relative'
+        position: 'relative',
       });
     });
   };
@@ -22,7 +22,7 @@ const App = () => {
     () => {
       getVideo();
     },
-    [ pathname ]
+    [pathname],
   );
   return (
     <S.Container>

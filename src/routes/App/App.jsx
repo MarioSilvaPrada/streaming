@@ -10,7 +10,7 @@ const App = () => {
     dacast(CONTENT_ID, 'video', {
       width: 500,
       height: 300,
-      position: 'relative'
+      position: 'relative',
     });
   }, []);
   return (

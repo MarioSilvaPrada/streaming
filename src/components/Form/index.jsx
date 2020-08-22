@@ -32,7 +32,7 @@ const Form = () => {
         value={name}
         onChange={(e) => setName(e.target.value)}
         required
-        name="entry.598555192"
+        name="entry.377377084"
       />
       <S.Label>{userInputs.Email}</S.Label>
       <S.StyledInput
@@ -40,7 +40,7 @@ const Form = () => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
-        name="entry.1523685262"
+        name="entry.963700569"
       />
       <S.Submit type="submit" value={userInputs.SubmitText} />
     </S.Wrapper>

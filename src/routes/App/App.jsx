@@ -6,11 +6,17 @@ const App = () => {
   const { welcomeText } = config;
   const CONTENT_ID = '179058_c_559516';
 
+  // const themeObject = {
+    //   width: 500,
+    //   height: 300,
+    //   position: 'relative'
+    // }
+
   useEffect(() => {
     dacast(CONTENT_ID, 'video', {
       width: 500,
       height: 300,
-      position: 'relative',
+      position: 'relative'
     });
   }, []);
   return (
